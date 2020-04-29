@@ -3,7 +3,7 @@
 # **Project TickyBot**
 
 ## **Overview** 
-Project TickyBot was developed and submitted as a Tier 1 Solo Project for Chingu Voyage 19. The aim of the project was to develop a landing page using html, css and vanilla javascript. 
+Project TickyBot was developed and submitted as the Tier 1 pre-work (Solo Project) for Chingu Voyage 19. The aim of the project was to develop a landing page using html, css and vanilla javascript. 
 
 ## **Features**
 * This project describes how teams can manage their support tickets inside Slack. 
