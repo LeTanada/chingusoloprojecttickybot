@@ -1,3 +1,4 @@
+/* document styling */
 * {
   box-sizing: border-box;
 }
@@ -9,8 +10,10 @@ html {
 body {
   font-family: 'Signika', sans-serif;
   color: #1E4352;
-  margin: 0px;
+  margin: 0;
 }
+
+/* bottom-right floating button styling */
 
 #myBtn {
   display: none;
@@ -37,9 +40,13 @@ body {
   transform: scale(0.99);
 }
 
+/* ticky-bold font */
+
 .bold {
   font-weight: 900;
 }
+
+/* page-header styling */
 
 .page-header {
   color: #E0D05A;
@@ -71,7 +78,8 @@ li:not(:last-child) {
 
 li a {
   text-decoration: none;
-  color: #FBCD60; 
+  color: #FBCD60;
+  font-size: 1.25rem; 
 }
 
 li a:hover {
@@ -82,8 +90,7 @@ h1 {
   color: #1E4352;
   margin: 0px;
   font-size: 5rem;
-  font-family: 'Signika', sans-serif;
-  padding-top: 50px;
+  font-family: 'Signika', sans-serif
 }
 
 h2 {
@@ -91,7 +98,7 @@ h2 {
   margin: 0px;
   padding-top: 40px;
   text-transform: capitalize;
-  font-size: xx-large;
+  font-size: 2.5rem;
 }
 
 h2:after {
@@ -103,17 +110,21 @@ h2:after {
   border-bottom: 2px solid #55C0EC;
 }
 
+/* section one styling */
+
 .section-one {
-  height: 670px;
   background-color: #55C0EC;
-  color: #FAFAFA
+  color: #FAFAFA;
+  font-size: 1.5rem;
+}
+
+.section-one-wrapper {
+  margin: 0 auto;
 }
 
 .section-one-left {
   text-align: center;
   font-size: x-large;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .slackbutton {
@@ -145,14 +156,23 @@ h2:after {
   transform: scale(0.99);
 }
 
+/* section two styling */
+
 .section-two {
   background-color: #FAFAFA;
+  font-size: 1.5rem;
+}
+
+.section-two-para {
   padding-left: 50px;
   padding-right: 50px;
 }
 
+/* section three styling */
+
 .section-three {
   background-color: #90DDAA;
+  font-size: 1.25rem;
 }
 
 h2 {
@@ -160,37 +180,56 @@ h2 {
   font-family: 'Signika', sans-serif;
 }
 
-.w3-row{
+.row {
+  margin: 0 auto;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
   float: left;
+  padding: 15px;
+}
+
+.code {
+  color: #DC143C;
+  background-color: #EDEDED;
 }
 
 #box-1 {
   background-image: url("https://tickybott.herokuapp.com/5e294ff6045f826e1b4f452df8897fb8.svg");
-  background-size: 50%;
+  background-size: 50vmin 75%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #box-2 {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTA4IDUwOCI+DQogIDxjaXJjbGUgc3R5bGU9ImZpbGw6IzU0QzFFQzsiIGN4PSIyNTQiIGN5PSIyNTQiIHI9IjI1NCIvPg0KICA8cGF0aCBzdHlsZT0iZmlsbDojMzI0QTVFOyIgZD0iTTE4NS4yLDE5MS42djEzMy4yYzAsNi40LDUuMiwxMS4yLDExLjIsMTEuMmgxMTEuMmw4MS42LDU2LjhMMzc0LjQsMzM2aDI2LjggYzYuNCwwLDExLjItNS4yLDExLjItMTEuMlYxOTEuNmMwLTYuNC01LjItMTEuMi0xMS4yLTExLjJIMTk2LjRDMTkwLDE4MC40LDE4NS4yLDE4NS4yLDE4NS4yLDE5MS42eiIvPg0KICA8cGF0aCBzdHlsZT0iZmlsbDojRkY3MDU1OyIgZD0iTTM2Ni40LDEyOC44djE1OC40YzAsNy42LTYsMTMuNi0xMy42LDEzLjZIMjIwLjRMMTIzLjIsMzY4bDE3LjYtNjcuNmgtMzJjLTcuNiwwLTEzLjYtNi0xMy42LTEzLjYgdi0xNThjMC03LjYsNi0xMy42LDEzLjYtMTMuNmgyNDRDMzYwLDExNS4yLDM2Ni40LDEyMS4yLDM2Ni40LDEyOC44eiIvPg0KICA8Zz4NCiAgPGNpcmNsZSBzdHlsZT0iZmlsbDojRTZFOUVFOyIgY3g9IjE1My42IiBjeT0iMjA4IiByPSIxOS42Ii8+DQogICAgPGNpcmNsZSBzdHlsZT0iZmlsbDojRTZFOUVFOyIgY3g9IjIzMC44IiBjeT0iMjA4IiByPSIxOS42Ii8+DQogICAgPGNpcmNsZSBzdHlsZT0iZmlsbDojRTZFOUVFOyIgY3g9IjMwNy42IiBjeT0iMjA4IiByPSIxOS42Ii8+DQogIDwvZz4NCjwvc3ZnPg0K");
-  background-size: 50%;
+  background-size: 50vmin 75%;
   background-repeat: no-repeat;
   background-position: center;
-  }
+}
 
 #box-3 {
   background-image: url("https://tickybott.herokuapp.com/61dc5059d07b210a9e0a7881695a8e03.svg");
-  background-size: 50%;
+  background-size: 50vmin 75%;
   background-repeat: no-repeat;
   background-position: center;
-  }
-
+}
 
 .item {
   height: 490px;
-  width: 360px;
+  margin: 0 auto;
 }
-
+  
+.container {
+  margin: 0 auto;
+}
+  
 .top-box {
   background-color: #40596B;
   height: 350px;
@@ -207,9 +246,12 @@ h2 {
   text-align: center;
 }
 
+/* section four styling */
+
 .section-four {
   background-color: #FAFAFA;
   text-align: center;
+  font-size: 1.25rem;
 }
 
 .section-centre {
@@ -217,10 +259,9 @@ h2 {
   align-items: center;
   flex-direction: column;
   padding-top: 30px;
-  font-size: large;
 }
 
-.section-centre-p1 {
+.section-centre-paraOne {
   width:50%;
 }
 
@@ -243,6 +284,8 @@ h2 {
   margin-bottom: 60px;
 }
 
+/* page footer styling */
+
 .page-footer {
   height: 100px;
   width: 100%;
@@ -260,6 +303,110 @@ p a {
   color: #CFD5DA;
 }
 
-.container {
-  column-width: 300px;
+/* webpage responsiveness using media queries */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* for mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/* extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .col-xs-1 {width: 8.33%;}
+  .col-xs-2 {width: 16.66%;}
+  .col-xs-3 {width: 25%;}
+  .col-xs-4 {width: 33.33%;}
+  .col-xs-5 {width: 41.66%;}
+  .col-xs-6 {width: 50%;}
+  .col-xs-7 {width: 58.33%;}
+  .col-xs-8 {width: 66.66%;}
+  .col-xs-9 {width: 75%;}
+  .col-xs-10 {width: 83.33%;}
+  .col-xs-11 {width: 91.66%;}
+  .col-xs-12 {width: 100%;}
+}
+
+/* small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+/* medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+}
+
+/* large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .col-l-1 {width: 8.33%;}
+  .col-l-2 {width: 16.66%;}
+  .col-l-3 {width: 25%;}
+  .col-l-4 {width: 33.33%;}
+  .col-l-5 {width: 41.66%;}
+  .col-l-6 {width: 50%;}
+  .col-l-7 {width: 58.33%;}
+  .col-l-8 {width: 66.66%;}
+  .col-l-9 {width: 75%;}
+  .col-l-10 {width: 83.33%;}
+  .col-l-11 {width: 91.66%;}
+  .col-l-12 {width: 100%;}
+}
+
+/* extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .col-xl-1 {width: 8.33%;}
+  .col-xl-2 {width: 16.66%;}
+  .col-xl-3 {width: 25%;}
+  .col-xl-4 {width: 33.33%;}
+  .col-xl-5 {width: 41.66%;}
+  .col-xl-6 {width: 50%;}
+  .col-xl-7 {width: 58.33%;}
+  .col-xl-8 {width: 66.66%;}
+  .col-xl-9 {width: 75%;}
+  .col-xl-10 {width: 83.33%;}
+  .col-xl-11 {width: 91.66%;}
+  .col-xl-12 {width: 100%;}
+}
+
+/* if the screen size is 1200px or more, set the width of .item to 360px */
+@media only screen and (min-width: 1200px) {
+  .item {
+    width: 360px;
+  }
 }
